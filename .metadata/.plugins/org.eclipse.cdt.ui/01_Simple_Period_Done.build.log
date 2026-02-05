@@ -1,0 +1,56 @@
+17:17:44 **** Incremental Build of configuration Debug for project 01_Simple_Period_Done ****
+make -j20 all 
+arm-none-eabi-gcc "../Driver_Layer/UART/my_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Driver_Layer/UART/my_uart.d" -MT"Driver_Layer/UART/my_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Driver_Layer/UART/my_uart.o"
+arm-none-eabi-gcc "../Driver_Layer/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Driver_Layer/LCD/LCD.d" -MT"Driver_Layer/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Driver_Layer/LCD/LCD.o"
+arm-none-eabi-gcc "../Driver_Layer/DHT22/DHT.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Driver_Layer/DHT22/DHT.d" -MT"Driver_Layer/DHT22/DHT.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Driver_Layer/DHT22/DHT.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+In file included from ../Driver_Layer/UART/my_uart.c:8:
+../Driver_Layer/UART/my_uart.h:7:10: fatal error: stm32f1xx_hal.h: No such file or directory
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DELL/STM32CubeIDE/workspace_1.16.1/single_task1/01_Simple_Period_Done/Driver_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+    7 | #include "stm32f1xx_hal.h"  // Thay đổi tùy dòng chip
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Driver_Layer/LCD/LCD.c:7:
+../Driver_Layer/LCD/lcd.h:11:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   11 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Driver_Layer/UART/subdir.mk:19: Driver_Layer/UART/my_uart.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Driver_Layer/LCD/subdir.mk:19: Driver_Layer/LCD/LCD.o] Error 1
+In file included from ../Driver_Layer/DHT22/DHT.c:1:
+../Driver_Layer/DHT22/dht.h:4:10: fatal error: stm32f1xx_hal.h: No such file or directory
+    4 | #include "stm32f1xx_hal.h"  // thay đổi theo dòng chip bạn dùng nếu khác
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/main.h:30:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   30 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+In file included from ../Core/Src/stm32f1xx_hal_msp.c:22:
+../Core/Inc/main.h:30:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   30 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Driver_Layer/DHT22/subdir.mk:19: Driver_Layer/DHT22/DHT.o] Error 1
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f1xx_hal_msp.o] Error 1
+In file included from ../Core/Src/stm32f1xx_it.c:21:
+../Core/Inc/main.h:30:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   30 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f1xx_it.o] Error 1
+In file included from ../Core/Src/system_stm32f1xx.c:58:
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:254:11: fatal error: stm32f1xx_hal.h: No such file or directory
+  254 |  #include "stm32f1xx_hal.h"
+      |           ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/system_stm32f1xx.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+
+17:17:44 Build Failed. 15 errors, 0 warnings. (took 249ms)
+
